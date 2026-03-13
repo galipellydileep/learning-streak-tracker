@@ -42,12 +42,23 @@ export default function Home() {
         <p className="text-lg">Total Study Days: {totalDays}</p>
         <p className="text-lg mb-4">Last Studied: {lastStudy}</p>
 
+        {/* Study Button */}
         <button
           onClick={markStudy}
           className="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600"
         >
           I Studied Today
         </button>
+
+        {/* History Button */}
+        <div className="mt-4">
+          <a
+            href="/history"
+            className="text-blue-600 underline hover:text-blue-800"
+          >
+            View Study History
+          </a>
+        </div>
       </div>
     </div>
   );
